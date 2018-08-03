@@ -44,7 +44,6 @@ int main()
         j = i;
         for(i=i+1; i<=n-1; i++)
         {
-            cout<<"i:"<<i<<endl;
             if(!q.empty() && q.front()<=temp)
             {
                 arr[i] = q.front();
@@ -55,6 +54,7 @@ int main()
                 arr[i] = temp;
                 arr[j] = q.front();
                 q.pop();
+                temp = 10;
             }
         }
 
